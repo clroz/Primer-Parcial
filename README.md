@@ -4,7 +4,7 @@ Laboratorio de segmentación de usuarios y servidores, control de salida y valid
 
 ## Topología
 
-![Diagrama de la topología Primer Parcial](imagenes/topologia-primer-parcial.svg)
+![Diagrama de la topología Primer Parcial]
 
 ## Direccionamiento
 
