@@ -30,7 +30,7 @@ La interfaz `Gi0/0` del switch transporta las VLAN 10, 20 y 30 mediante 802.1Q. 
 - Web Server puede abrir TCP 3306 hacia MariaDB. SSH de Web Server a DB, HTTP desde Web Server a `1.1.1.1` e ICMP desde DB a `1.1.1.1` fueron bloqueados.
 - El túnel IPsec IKEv2 entre los FortiGate está activo y la sucursal puede llegar por HTTP al Web Server.
 
-![Resumen de resultados observados en las validaciones](imagenes/validaciones-observadas.svg)
+![Resumen de resultados observados en las validaciones]
 
 ## Configuraciones
 
