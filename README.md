@@ -1,10 +1,10 @@
 # Primer Parcial — Seguridad de Redes
 
+Video de demostración: https://youtu.be/SAxDl47GXZA
+
 Laboratorio de segmentación de usuarios y servidores, control de salida y validación de políticas mediante FortiGate, Cisco IOSvL2 y servidores Linux en PNETLab.
 
 ## Topología
-
-![Diagrama de la topología Primer Parcial]
 
 ## Direccionamiento
 
@@ -30,11 +30,11 @@ La interfaz `Gi0/0` del switch transporta las VLAN 10, 20 y 30 mediante 802.1Q. 
 - Web Server puede abrir TCP 3306 hacia MariaDB. SSH de Web Server a DB, HTTP desde Web Server a `1.1.1.1` e ICMP desde DB a `1.1.1.1` fueron bloqueados.
 - El túnel IPsec IKEv2 entre los FortiGate está activo y la sucursal puede llegar por HTTP al Web Server.
 
-![Resumen de resultados observados en las validaciones]
+![Resumen de resultados observados en las validaciones](imagenes/validaciones-observadas.svg)
 
 ## Configuraciones
 
-Los archivos de `configuraciones/` corresponden a los equipos de red del laboratorio: FortiGate HQ, FortiGate de sucursal, switch IOSvL2 y nodo ISP Linux. Se excluyeron las claves administrativas y la clave compartida IPsec de los archivos publicados.
+El archivo `lab/Primer Parcial.unl` contiene la topología exportada para PNETLab. Los archivos de `configuraciones/` corresponden a los equipos de red del laboratorio: FortiGate HQ, FortiGate de sucursal, switch IOSvL2 y nodo ISP Linux. Se excluyeron las claves administrativas y la clave compartida IPsec de los archivos publicados.
 
 El túnel IPsec activo negocia DES/SHA-1 porque esta imagen de FortiOS solo ofrece esas propuestas en el laboratorio. Es una limitación de la imagen y no una configuración recomendada para producción.
 
@@ -42,12 +42,14 @@ El túnel IPsec activo negocia DES/SHA-1 porque esta imagen de FortiOS solo ofre
 
 ```text
 README.md
+lab/
+  Primer Parcial.unl
 configuraciones/
   fortigate-hq.conf
   fortigate-branch.conf
   isp-router-linux.sh
   switch-iosvl2.cfg
 imagenes/
-  topologia-primer-parcial.svg
+  topologia-primer-parcial.png
   validaciones-observadas.svg
 ```
